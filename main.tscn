@@ -1,0 +1,376 @@
+[gd_scene load_steps=5 format=3 uid="uid://bl52gnoyvkffd"]
+
+[ext_resource type="Script" path="res://board.gd" id="1_argpo"]
+[ext_resource type="Material" uid="uid://danbq8wkt60k5" path="res://black_material.tres" id="1_fsck7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2820w"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ivp4y"]
+material = SubResource("StandardMaterial3D_2820w")
+size = Vector3(1, 0.25, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Board" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_argpo")
+
+[node name="Squares" type="Node3D" parent="Board"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.125, -3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.125, -2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50025, 0.125, -2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50025, 0.125, -3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.125, -1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.125, -0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50025, 0.125, -0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50025, 0.125, -1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.125, -3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.125, -2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50025, 0.125, -2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500247, 0.125, -3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.125, -1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.125, -0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50025, 0.125, -0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500247, 0.125, -1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.125, 0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.125, 1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50025, 0.125, 1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50025, 0.125, 0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.125, 2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.125, 3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50025, 0.125, 3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50025, 0.125, 2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.125, 0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.125, 1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50025, 0.125, 1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500247, 0.125, 0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.125, 2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.125, 3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50025, 0.125, 3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500247, 0.125, 2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.125, -3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D34" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.125, -2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D35" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499753, 0.125, -2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D36" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49975, 0.125, -3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D37" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.125, -1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D38" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.125, -0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D39" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499753, 0.125, -0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D40" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49975, 0.125, -1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D41" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.125, -3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D42" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.125, -2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D43" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49975, 0.125, -2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D44" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.49975, 0.125, -3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D45" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.125, -1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D46" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.125, -0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D47" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49975, 0.125, -0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D48" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.49975, 0.125, -1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D49" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.125, 0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D50" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.125, 1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D51" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499753, 0.125, 1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D52" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49975, 0.125, 0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D53" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.125, 2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D54" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.125, 3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D55" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499753, 0.125, 3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D56" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49975, 0.125, 2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D57" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.125, 0.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D58" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.125, 1.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D59" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49975, 0.125, 1.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D60" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.49975, 0.125, 0.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D61" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.125, 2.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D62" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.125, 3.5)
+material_override = ExtResource("1_fsck7")
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D63" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49975, 0.125, 3.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D64" type="MeshInstance3D" parent="Board/Squares"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.49975, 0.125, 2.5)
+mesh = SubResource("BoxMesh_ivp4y")
+skeleton = NodePath("../../..")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, -3.09086e-08, -1.28028e-08, 3.09086e-08, 0.707107, 0.707107, -1.28028e-08, -0.707107, 0.707107, 0, 7, 6)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1.91069e-15, -1, -4.37114e-08, -4.37114e-08, -4.37114e-08, 1, -1, 0, -4.37114e-08, 0, 6, 0)

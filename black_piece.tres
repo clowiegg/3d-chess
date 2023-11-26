@@ -1,0 +1,7 @@
+[gd_resource type="CylinderMesh" load_steps=2 format=3 uid="uid://c75g6rwcq7cdk"]
+
+[ext_resource type="Material" uid="uid://danbq8wkt60k5" path="res://black_material.tres" id="1_vviv4"]
+
+[resource]
+material = ExtResource("1_vviv4")
+height = 0.25
