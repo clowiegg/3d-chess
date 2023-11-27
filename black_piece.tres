@@ -4,4 +4,6 @@
 
 [resource]
 material = ExtResource("1_vviv4")
-height = 0.25
+top_radius = 0.45
+bottom_radius = 0.45
+height = 1.5

@@ -41,6 +41,6 @@ func _ready():
 	
 	for rank in [0,1,6,7]:
 		for file in range(8):
-			array[rank][file].position = Vector3(rank - 3.5, 0.5, file - 3.5)
+			array[rank][file].position = Vector3(rank - 3.5, 1, file - 3.5)
 			add_child(array[rank][file])
 				

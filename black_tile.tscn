@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://vbrbik7cievg"]
+
+[ext_resource type="BoxMesh" uid="uid://bsnisotj5we0m" path="res://black_tile.tres" id="1_80k18"]
+[ext_resource type="Script" path="res://tile.gd" id="1_tfo7e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1f8j6"]
+size = Vector3(1, 0.25, 1)
+
+[node name="Tile" type="Node3D"]
+script = ExtResource("1_tfo7e")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_1f8j6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_80k18")
